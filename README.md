@@ -1,12 +1,54 @@
-# spring-gumball ci/cd example
+## Screenshots of your "full" desktop for the Part 1 (CI) and Part 2 (CD)
+### Note: Screenshots should be for each of the steps as shown above
+### for both Part 1 and Part 2.
+### Please describe each screenshots to explain which steps taken and results achieved
 
-### This example demonstrates the following two GitHub Workflows.
+## Part 1   
+Create a new repository on GitHub called "spring-gumball".  
+Push and deploy gradle.yml and build workflow
 
-* https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-gradle
+![first.jpg](screenshots%2Ffirst.jpg)
 
-* https://github.com/google-github-actions/setup-gcloud/tree/master/example-workflows/gke
+Build successful
+![first.jpg](screenshots%2Fsecond.jpg)
 
-### Build Dependencies
+## Part 2
+Creation of cluster
+![cluster.jpg](screenshots%2Fcluster.jpg)
 
-* Gradle 5.6
-* JDK 11
+enable gke container register
+![gke.jpg](screenshots%2Fgke.jpg)
+
+enable kubernetes engine api
+![kub.jpg](screenshots%2Fkub.jpg)
+
+create service account
+![serviceaccount.jpg](screenshots%2Fserviceaccount.jpg)
+
+grant permission of gke and kubernetes to service account
+![grantpermission.jpg](screenshots%2Fgrantpermission.jpg)
+
+create secret json key
+![key.jpg](screenshots%2Fkey.jpg)
+
+create secrets on github repository
+![secretgithub.jpg](screenshots%2Fsecretgithub.jpg)
+
+create google.yml and push to github for deployment
+![googleyml.jpg](screenshots%2Fgoogleyml.jpg)
+
+create release 2.3 and deploy
+![publish.jpg](screenshots%2Fpublish.jpg)
+
+gke deployment successful 
+![gkepub.jpg](screenshots%2Fgkepub.jpg)
+
+Workload gumball deployed   
+![workload.jpg](screenshots%2Fworkload.jpg)
+Service gumball deployed   
+![spring-gumball-service.jpg](screenshots%2Fspring-gumball-service.jpg)   
+creation of ingress
+![ingress.jpg](screenshots%2Fingress.jpg)
+
+accessing gumball on browser
+![springgke.jpg](screenshots%2Fspringgke.jpg)
